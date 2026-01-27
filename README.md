@@ -1,5 +1,5 @@
 # CLI Pomodoro Timer
-
+---
 A **terminal-based Pomodoro timer** written in pure Python with a live progress bar, keyboard controls, and non-blocking input handling.
 
 - No external dependencies (except pip installs).
