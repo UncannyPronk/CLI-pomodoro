@@ -59,7 +59,9 @@ python3 pomodoro.py
 ### Enter block durations (in seconds)
 
 Duration of work block -> 1500
+
 Duration of short break block -> 300
+
 Duration of long break block -> 900
 
 ### Control execution using the keyboard
