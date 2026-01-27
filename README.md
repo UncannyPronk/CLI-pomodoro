@@ -1,24 +1,27 @@
 # CLI Pomodoro Timer
 
-A **terminal-based Pomodoro timer** written in pure Python with a live progress bar, keyboard controls, and non-blocking input handling inspired by pip installs.
+A **terminal-based Pomodoro timer** written in pure Python with a live progress bar, keyboard controls, and non-blocking input handling.
 
-No external dependencies. Designed for Linux and macOS terminals.
+- No external dependencies (except pip installs).
+- Designed for Linux and macOS terminals.
+
+---
 
 ## Features
 
-Real-time progress bar
+- Real-time progress bar
 
-Pause and resume the current block
+- Pause and resume the current block
 
-Reset the current block instantly
+- Reset the current block instantly
 
-Quit at any time with a completion summary
+- Quit at any time with a completion summary
 
-Non-blocking keyboard controls
+- Non-blocking keyboard controls
 
-Background key listener using threading
+- Background key listener using threading
 
-Proper terminal state restoration on exit
+- Proper terminal state restoration on exit
 
 ---
 
@@ -94,16 +97,14 @@ No blocking input calls are used during active timing.
 
 ## Requirements
 
-Python 3.7 or newer
+- Python 3.7 or newer
 
-Unix-like terminal environment (Linux or macOS)
-
-Windows is not supported due to reliance on termios.
+- Unix-like terminal environment (Linux or macOS)
 
 # Known Limitations
 
-Requires a real TTY (not suitable for redirected input)
+- Requires a real TTY (not suitable for redirected input)
 
-Terminal resizing during execution may misalign output
+- Terminal resizing during execution may misalign output
 
-Windows is not compatible with this tool
+- Windows is not compatible with this tool
