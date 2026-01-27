@@ -5,8 +5,6 @@ A **terminal-based Pomodoro timer** written in pure Python with a live progress 
 - No external dependencies (except pip installs).
 - Designed for Linux and macOS terminals.
 
----
-
 ## Features
 
 - Real-time progress bar
@@ -22,8 +20,6 @@ A **terminal-based Pomodoro timer** written in pure Python with a live progress 
 - Background key listener using threading
 
 - Proper terminal state restoration on exit
-
----
 
 ### Pomodoro Structure
 
@@ -108,3 +104,5 @@ No blocking input calls are used during active timing.
 - Terminal resizing during execution may misalign output
 
 - Windows is not compatible with this tool
+
+---
