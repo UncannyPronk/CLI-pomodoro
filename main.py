@@ -66,19 +66,18 @@ def progress_bar(current, total, block, width=40):
     percent = progress * 100
 
     clear_line()
-    move_cursor_up(1)
-    clear_line()
-    print(f"Cycle {cycle_count}")
+    # move_cursor_up(1)
+    # clear_line()
 
     if block % 2 == 0:
         label = "Focus on work..."
     elif block < 7:
-        label = "Short break!"
+        label = "Short break!    "
     else:
-        label = "Long break!!!"
+        label = "Long break!!!   "
     
     if paused:
-        label += " [PAUSED]"
+        label = "[PAUSED]"
 
     sys.stdout.write(f"\r[{bar}] {percent:6.2f}%  {label}")
     sys.stdout.flush()
@@ -125,6 +124,9 @@ listener.start()
 while True:
     cycle_count += 1
     try:
+        move_cursor_up(1)
+        clear_line()
+        print(f"Cycle {cycle_count}")
         cycle()
     except KeyboardInterrupt:
         clear_line()
